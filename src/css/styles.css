@@ -7,11 +7,11 @@
 /* Common styles */
 
 
-@import url('./header-nav-section.css');
-@import url('./hero-section.css');
-@import url('./about-us-section.css');
-@import url('./our-courses-section.css');
-@import url('./our-mentors-section.css');
-@import url('./sign-up-section.css');
-@import url('./reviews-section.css');
-@import url('./footer-section.css');
+@import url('/css/header-nav-section.css');
+@import url('/css/hero-section.css');
+@import url('/css/about-us-section.css');
+@import url('/css/our-courses-section.css');
+@import url('/css/our-mentors-section.css');
+@import url('/css/sign-up-section.css');
+@import url('/css/reviews-section.css');
+@import url('/css/footer-section.css');
