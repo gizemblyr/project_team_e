@@ -1,0 +1,374 @@
+:root {
+    --black: #121212;
+    --gray: #1d1d1d;
+    --brown: #bea69e;
+    --white: #ffffff;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--black);
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+button {
+    cursor: pointer;
+
+}
+a {
+    text-decoration: none;
+    
+}
+.header-section{
+    padding: 10px 0px;
+}
+
+.header-container{
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 20px;    
+}
+.burger-button{
+    display: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.header-sign-up-button{
+    display: none;
+    background-color: white;
+    padding: 15px 30px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    width: 230px;
+    text-align: center;
+}
+.hero-design{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header-hero {
+    width: 100%;
+    background-image: url(./img/HeaderHero.png);
+    color: white;
+    padding-top: 20px;
+}
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-ul .nav-li{
+    font-size: 14px;
+}
+.nav-ul li a{
+    color: white;
+    
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: var(--black);
+    padding: 20px;
+    width: 100%;
+}
+
+.nav-cam-icon:hover {
+    --color3: var(--brown)
+}
+
+.nav-icons-div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.nav-burger-div{
+    display: none;
+}
+
+/* hamburger menu */
+.menu-wrap {
+    width: 218px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: var(--brown);
+    z-index: 42;
+    display: none;
+}
+
+.hamburger-checkbox {
+    display: none;
+}
+
+body:has(.hamburger-checkbox:checked) .menu-wrap {
+    display: block;
+}
+
+.menu-wrap-img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.menu-links {
+    margin-top: 180px;
+}
+
+.menu-links li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: var(--black);
+    column-gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 18.23px;
+    font-weight: 400;
+}
+
+.menu-camera-div {
+    display: flex;
+    align-items: end;
+    margin-top: 133px;
+}
+.cam-button{
+    display: block;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 1024px;
+    z-index: 999;
+    background-color: rgb(190,166,158);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    
+}
+.sidebar li{
+    font-size: 14px;
+    
+}
+.sidebar li a{
+    color: black;
+    margin-left: 30px;
+}
+.hideOnMobile{
+    display: none;
+}
+.mobil-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.burger-button{
+    display: block;
+    
+}
+.cam-icon{
+    display: block;
+}
+.sidebar .menu-camera-div-image{
+    width: 100%;
+}
+
+/* Header Bitimi */
+
+/* Hero */
+.hero-section {
+    max-width: 1240px;
+    margin: auto;
+    background-color: var(--gray);
+    border-radius: 30px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+
+.hero-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-main-title-h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 4.25rem;
+    letter-spacing: -0.04em;
+    color: var(--white);
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.hero-main-title-span {
+    font-style: italic;
+    color: var(--brown);
+}
+
+.hero-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--white);
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.hero-reviews-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+}
+
+.hero-text-number {
+    display: flex;
+    margin-left: 15px;
+}
+
+.hero-h6-h4-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.hero-students-link-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-students-link {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 89px;
+}
+.hero-students-text{
+    color: white;
+    font-size: 16px;
+    line-height: 1.25rem;
+    letter-spacing: -0.04em;
+}
+
+.hero-link-text {
+    display: flex;
+    width: 70px;
+    height: 36px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.06em;
+    text-align: left;
+    color: var(--white);
+}
+
+.hero-text {
+    opacity: 0.5;
+}
+
+.hero-text,
+.hero-number {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: -0.04em;
+    color: var(--white);
+}
+
+.image-arrow-div {
+    display: flex;
+    align-items: center;
+}
+
+.image-arrow {
+    display: flex;
+    width: 18px;
+    align-items: center;
+}
+
+.hero-photographer {
+    margin-left: 15px;
+}
+.nav-cam-icon{
+    display: block;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px){
+    .header-sign-up-button{
+        display: inline-block;
+    }
+    .nav-ul .header-sign-up-button{
+        display: block;
+    }
+    .header-container{
+        max-width: 768px;
+    }
+    
+
+    .hero-container {
+        max-width: 768px;
+    }
+    
+    .nav-cam-icon{
+        display: none;
+    }
+    .hero-paragraph{
+        width: 55%;
+    }
+    .hero-main-title-h1{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hideOnMobile{
+        display: block;
+    }
+    .burger-button{
+        display: none;
+    }
+    
+    .header-container{
+        max-width: 1240px;
+    }
+    .hero-container {
+        max-width: 1240px;
+    }
+    .hero-div{
+        flex-direction: row;
+    }
+}

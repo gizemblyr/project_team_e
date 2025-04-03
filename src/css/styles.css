@@ -16,3 +16,12 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+@import url('./header-nav-section.css');
+@import url('./hero-section.css');
+@import url('./about-us-section.css');
+@import url('./our-courses-section.css');
+@import url('./our-mentors-section.css');
+@import url('./sign-up-section.css');
+@import url('./reviews-section.css');
+@import url('./footer-section.css');

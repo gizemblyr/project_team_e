@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+
+    <main>
+        <section class="signup-section">
+
+            <div class="signup-container">
+                <h2 class="title-sign">Sign
+                    <span class="title-up">Up</span>
+                </h2>
+                <p class="signup-text">
+                    Please use the form below to contact us. Enter your name, email,
+                    and message and we'll get back to you shortly.
+                </p>
+                <form name="signup-form" class="signup-form" autocomplete="off">
+                    <div class="input-container">
+                        <input type="text" name="name" class="signup-input" placeholder="Enter your name" />
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="signup-input" placeholder="Enter your email" />
+                    </div>
+                    <div class="input-container-text">
+                        <textarea name="comment" class="signup-textarea" placeholder="Message"></textarea>
+                    </div>
+                </form>
+                <button type="submit" name="send" class="signup-btn-send">SEND</button>
+                <p class="signup-text-down">
+                    By clicking on "Send" button, you agree to our
+                    <span class="down-span">Privacy Policy</span>,
+                    and allow Promodo to use this information for marketing purposes.
+                </p>
+            </div>
+
+            <div class="signup-img-container">
+                <div class="signup-lens">
+                    <img src="./images/lens.png" alt="lens" class="lens-png" width="163" height="154" />
+                </div>
+                <div class="signup-camera">
+                    <img src="./images/camera.png" alt="camera" class="camera-png" width="254" height="313" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<header class="header-section">
+    <div class="container header-container">
+      <nav class="header-nav">
+        <a href="#">
+          <svg class="nav-logo-icon" width="123" height="16">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+  
+        <ul class="sidebar">
+          <li class="mobil-close" onclick="hideSideBar()">
+            <img
+              class="menu-wrap-img"
+              src="./img/MenuWrap.png"
+              alt="menu-wrap-close-img"
+              width="32"
+              height="32"
+            />
+          </li>
+          <li>
+            <a href="#about-us">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#our-courses">OUR COURSES</a>
+          </li>
+          <li>
+            <a href="#our-mentors">OUR MENTORS</a>
+          </li>
+          <li>
+            <a href="#reviews">REVIEWS</a>
+          </li>
+          <li>
+            <a href="#contacts">CONTACTS</a>
+          </li>
+          <li>
+            <img
+              class="menu-camera-div-image"
+              srcset="./img/MenuCamera2.png"
+              src="./img/MenuCamera.png"
+              alt="menu_camera"
+              width="476"
+              height="480"
+            />
+          </li>
+        </ul>
+  
+        <ul class="nav-ul">
+          <li class="nav-li hideOnMobile">
+            <a class="nav-li-a" href="#about-us">ABOUT US</a>
+          </li>
+          <li class="nav-li hideOnMobile">
+            <a class="nav-li-a" href="#our-courses">OUR COURSES</a>
+          </li>
+          <li class="nav-li hideOnMobile">
+            <a class="nav-li-a" href="#our-mentors">OUR MENTORS</a>
+          </li>
+          <li class="nav-li hideOnMobile">
+            <a class="nav-li-a" href="#reviews">REVIEWS</a>
+          </li>
+          <li class="nav-li hideOnMobile">
+            <a class="nav-li-a" href="#contacts">CONTACTS</a>
+          </li>
+          <li class="nav-li">
+            <a href="#sign-up">
+              <svg class="nav-cam-icon" width="16" height="16">
+                <use href="./img/icons.svg#icon-camera"></use>
+              </svg>
+            </a>
+          </li>
+          <li onclick="showSideBar()" class="nav-li burger-button">
+            <svg class="nav-burger-icon" width="32" height="22">
+              <use href="./img/icons.svg#icon-nav-burger"></use>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+  
+      <a href="#sign-up" class="header-sign-up-button">SIGN UP</a>
+
+    </div>
+  </header>
+
+  <script>
+    function showSideBar(){
+        const sidebar = document.querySelector(".sidebar")
+
+        sidebar.style.display = "flex"
+
+    }
+</script>
+<script>
+    function hideSideBar(){
+        const sidebar = document.querySelector(".sidebar")
+
+        sidebar.style.display = "none"
+    }
+</script>
