@@ -1,19 +1,20 @@
 import { defineConfig } from 'vite';
-import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import { resolve } from 'path';
 
 export default defineConfig(({ command }) => {
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src',
     build: {
       sourcemap: true,
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        input: {
+          main: resolve(__dirname, 'index.html')  // artık kökten başlatıyoruz
+        },
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
@@ -34,15 +35,16 @@ export default defineConfig(({ command }) => {
           },
         },
       },
-      outDir: '../dist',
+      outDir: 'dist',       // ../dist yapmana gerek yok
       emptyOutDir: true,
     },
     plugins: [
       injectHTML(),
-      FullReload(['./src/**/**.html']),
+      FullReload(['./**/*.html']), // artık src değil, tüm dizini izliyoruz
       SortCss({
         sort: 'mobile-first',
       }),
     ],
+    base: '/project_team_e/', // GitHub Pages için önemli!
   };
 });
