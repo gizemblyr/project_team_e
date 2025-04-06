@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    color: white;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    background-color: rgb(18,18,18);
+    font-family: 'DM Sans';
+}
+.mentor-section h2{
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.mentor-section .mentors{
+    color: rgb(190, 166, 158);
+}
+.mentor-section .mentor-team img{
+    border-radius: 50%;
+    display: block;
+}
+.mentor-section .mentor-team{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 100px;
+}
+.mentor-section .mentor-team .mentor-team-member{
+    flex-basis: calc((100% - 400px) / 4);
+    margin: 0 auto;
+}
+.mentor-section .mentor-team .mentor-description{
+    margin-top: 16px;
+}
+.mentor-section .mentor-team .mentor-description h3{
+    color: white;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-size: 25px;
+}
+.mentor-section .mentor-team .mentor-description p{
+    color: white;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-size: 14px;
+    
+}
+@media screen and (min-width:768px) {
+    .container{
+        max-width: 768px;
+    }
+    .mentor-section .mentor-team{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:1158px) {
+    .container{
+        max-width: 1240px;
+    }
+}
