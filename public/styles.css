@@ -381,6 +381,7 @@ margin: 0;
 padding: 0;
 }
 .hero {
+margin-bottom: 80px;
 display: flex;
 justify-content: space-between;
 align-items: flex-start;
@@ -503,6 +504,7 @@ display: block;
 }
 @media (max-width: 900px) {
 .hero {
+margin-bottom: 80px;
   flex-direction: column;
   text-align: center;
 }
@@ -557,6 +559,8 @@ body {
 
 /* Ä°kinci section - About Us */
 .section-2 {
+margin-top: 80px;
+margin-bottom: 80px;
   width: 100%;
   padding: 50px 0;
   background-color: #121212;
@@ -694,6 +698,8 @@ font-family: 'DM Sans', sans-serif;
 }
 
 .our-courses-section {
+margin-top: 80px;
+margin-bottom: 80px;
 width: 100%;
 color: #ffffff;
 margin-top: 80px;
@@ -886,6 +892,8 @@ body{
 }
 
 .signup-section {
+margin-top: 80px;
+margin-bottom: 80px;
   padding: 0;
   margin: 150px 100px;
   display: flex;
