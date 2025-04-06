@@ -1,3 +1,6 @@
+body {
+  background-color: pink;
+}
 @import url('./css/header-nav-section.css');
 @import url('./css/hero-section.css');
 @import url('./css/about-us-section.css');
