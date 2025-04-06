@@ -1,4 +1,12 @@
-import './css/styles.css';
+import './css/header-nav-section.css';
+import './css/hero-section.css';
+import './css/about-us-section.css';
+import './css/our-courses-section.css';
+import './css/our-mentors-section.css';
+import './css/sign-up-section.css';
+import './css/reviews-section.css';
+import './css/footer-section.css';
+
 document.addEventListener("DOMContentLoaded", () => {
   const loadElements = document.querySelectorAll("load[src]");
 
