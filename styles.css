@@ -382,11 +382,13 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 80px 100px 150px 100px;
   background-color: #1d1d1d;
   border-radius: 16px;
   color: white;
   position: relative;
+}
+.hero {
+  margin: 80px 100px 150px;
 }
 .hero__content {
   max-width: 50%;
