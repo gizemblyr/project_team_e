@@ -5,6 +5,7 @@
   |============================
 */
 /* Common styles */
+body { visibility: visible; }
 
 @import url('./header-nav-section.css');
 @import url('./hero-section.css');
