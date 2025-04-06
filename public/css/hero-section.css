@@ -1,46 +1,40 @@
 * {
-  margin: 0px 0px;
-  padding: 0px 0px;
+  margin: 0;
+  padding: 0;
 }
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* içerikleri üstten başlat */
+  align-items: flex-start;
   margin: 160px 100px 150px 100px;
   background-color: #1d1d1d;
   border-radius: 16px;
-  /*padding: 4em;*/
   color: white;
   position: relative;
 }
-
 .hero__content {
   max-width: 50%;
   margin-left: 50px;
   margin-top: 80px;
   margin-bottom: 50px;
 }
-
 .hero__content h1 {
   font-size: 64px;
   line-height: 68px;
   max-width: 563px;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
-
 .hero__content h1 em {
   font-style: italic;
   color: #b29c8a;
 }
-
 .hero-content-text {
   margin-top: 20px;
-  font-size: 14;
+  font-size: 14px;
   line-height: 1.6;
   max-width: 418px;
   margin-bottom: 136px;
 }
-
 .hero__stats {
   display: flex;
   align-items: center;
@@ -72,25 +66,22 @@
   color: #fff;
 }
 .students-text {
-  min-width: 56px;
   text-decoration: none;
-  font-size: 0.9rem;
-  color: white;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   line-height: 20px;
-  max-width: 82px;
+  color: white;
 }
 .arrow {
   fill: white;
   width: 18px;
   height: 8px;
 }
-
 .reviews {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 .star-content {
   width: 50px;
@@ -100,27 +91,7 @@
 }
 .star {
   font-size: 1.5rem;
-  margin-right: 0.5rem;
   color: #b29c8a;
-}
-.hero__image {
-  position: absolute;
-  bottom: 0;
-  right: 100px;
-}
-
-.hero__image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  display: block;
-  margin-bottom: 0;
-}
-
-.reviews {
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 .reviews-section {
   display: flex;
@@ -132,17 +103,26 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   line-height: 20px;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
 .review-number {
   color: white;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
 }
-
-/* Responsive */
+.hero__image {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+.hero__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
